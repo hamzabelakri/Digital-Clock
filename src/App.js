@@ -7,11 +7,16 @@ function App() {
 
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
-  const seconds = new Date().getSeconds();
+  const [seconds, setSeconds] = useState()
   const ampm = hours>12? "PM" : "AM";
 
 
 
+setTimeout(() => {
+  setSeconds(new Date().getSeconds())
+
+  }, 1000);
+  
 
   return (
     <div>
